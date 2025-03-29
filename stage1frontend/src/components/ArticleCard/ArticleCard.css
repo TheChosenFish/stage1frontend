@@ -1,0 +1,71 @@
+.article-card {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  height: 576px;
+  width: 400px;
+  border-radius: 25px;
+}
+
+.save-article__button {
+  background-image: url(../../assets/Group\ 12.png);
+  border: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.article-card__name {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  font-family: "Roboto400";
+  bottom: 5px;
+  left: 20px;
+}
+
+.article-card__image {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom: 0px;
+  background-image: url(../../assets/image_08.png);
+  height: 272px;
+  width: 400px;
+}
+
+.article__section {
+  background-color: transparent;
+  contain: content;
+  position: absolute;
+  bottom: 100px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .article-card {
+    width: 224px;
+    height: 420px;
+  }
+
+  .article__section {
+    contain: content;
+    position: absolute;
+    bottom: 100px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .article-card__image {
+    width: 224px;
+    height: 150px;
+  }
+
+  .article__preview {
+    font-family: "Roboto400";
+    text-overflow: ellipsis;
+  }
+}

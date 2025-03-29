@@ -1,0 +1,125 @@
+.searching__container {
+  font-family: "Roboto400slab, Roboto400, Roboto700";
+  color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgba(245, 246, 247, 1); */
+  height: 576px;
+  width: 100%;
+  padding: 0;
+  z-index: 0;
+}
+
+.searching__header {
+  width: 608px;
+  height: 108px;
+  font-size: 60px;
+  margin-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.search__explain {
+  font-family: "Roboto400";
+  font-size: 18px;
+  font-weight: 400;
+  height: 24px;
+  width: 608px;
+  margin-top: 64px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 232px;
+}
+
+.search__bar {
+  width: 608px;
+  max-width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+.search__input {
+  height: 64px;
+  width: 100%;
+  border-radius: 100px;
+  border: solid, 1px, #fff;
+}
+
+.search__button {
+  background-color: rgba(47, 113, 229, 1);
+  border-radius: 100px;
+  border: solid, 1px, rgba(47, 113, 229, 1);
+  width: 168px;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  right: -6px;
+}
+
+@media screen and (max-width: 768px) {
+  .searching__container {
+    font-family: "Roboto400slab";
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 576px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .searching__header {
+    font-size: 36px;
+    margin-top: 38px;
+    margin-bottom: 16px;
+    margin-right: 220px;
+    margin-left: 163px;
+    height: 80px;
+    width: 385px;
+  }
+
+  .search__explain {
+    margin-top: 0px;
+    margin-bottom: 48px;
+    margin-left: 160px;
+    margin-right: 152px;
+    font-size: 18px;
+    width: 452px;
+    height: 48px;
+  }
+
+  .search__bar {
+    width: 448px;
+    height: 56px;
+    margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .search__input {
+    height: 52px;
+  }
+
+  .search__button {
+    width: 160px;
+    height: 56px;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searching__header {
+    /* width: 285px;
+    height: 80px; */
+    font-size: 36px;
+  }
+
+  .search__explain {
+    width: 285px;
+    height: 80px;
+  }
+}

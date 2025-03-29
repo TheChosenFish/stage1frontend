@@ -1,13 +1,34 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./components/App/App.js";
-import { BrowserRouter } from "react-router-dom";
-import "./index.css";
+import { useContext } from "react";
+import { Route, Routes } from "react-router-dom";
+import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
+import About from "../About/About";
+import SavedArticles from "../SavedArticles/SavedArticles";
+import Results from "../Results/Results";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </StrictMode>
-);
+function Main({ isLoggedIn, isFound }) {
+  return (
+    <main>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Results isLoggedIn={isLoggedIn} isFound={isFound} />
+              <About />
+            </>
+          }
+        />
+        <Route
+          path="/saved-news"
+          element={
+            <ProtectedRoute isLoggedIn={isLoggedIn}>
+              <SavedArticles />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
+    </main>
+  );
+}
+
+export default Main;

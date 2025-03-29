@@ -1,0 +1,131 @@
+.header {
+  font-family: "Roboto";
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.header__saved-articles {
+  font-family: "Roboto";
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.header__bg {
+  background-image: url(../../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.nav__container_saved-articles {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.nav__title {
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 26px;
+  margin-left: 104px;
+}
+
+.header__buttons {
+  display: flex;
+  margin-left: auto;
+  margin-right: 104px;
+}
+
+.nav__home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  margin-top: 13px;
+}
+
+.nav__sign-in {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 80px;
+  border: 1px, solid, #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 48px;
+  width: 176px;
+}
+
+.nav__saved-news {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  /* border-radius: 80px;
+  border: 1px, solid, #fff; */
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 48px;
+  width: 176px;
+}
+
+.logout__button {
+  border-radius: 80px;
+  border: 1px, solid, #fff;
+  background-color: transparent;
+  background-image: url(../../assets/logout.png);
+  background: no-repeat;
+  color: #fff;
+  border-radius: 100px;
+  width: 112px;
+  height: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__container {
+    width: 768px;
+  }
+
+  .nav__title {
+    margin-left: 40px;
+  }
+
+  .header__buttons {
+    margin-right: 40px;
+  }
+
+  .header__bg {
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .nav__container {
+    width: 320px;
+  }
+
+  .header__buttons {
+    visibility: hidden;
+  }
+
+  .menu__button {
+    background-color: transparent;
+    color: #000000;
+    background-image: url(../../assets/menu.png);
+    border: none;
+  }
+}
