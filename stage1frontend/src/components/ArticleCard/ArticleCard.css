@@ -1,21 +1,130 @@
 .article-card {
   position: relative;
-  display: flex;
+
   background-color: #fff;
   justify-content: center;
-  height: 576px;
+
   width: 400px;
   border-radius: 25px;
 }
-
-.save-article__button {
-  background-image: url(../../assets/Group\ 12.png);
-  border: none;
-  height: 40px;
-  width: 40px;
+.article-card__button-container {
   position: absolute;
   right: 20px;
   top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-direction: row-reverse;
+}
+
+.article-card__delete-container {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-direction: row-reverse;
+}
+
+.save-article__button {
+  background-image: url(../../assets/save-article.svg);
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
+.sign-in__button {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  margin: 0px;
+  width: 159px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.article-card__saved {
+  background-image: url(../../assets/saved-highlight.svg);
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+.article-delete__tag {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  margin: 0px;
+  width: 159px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.article__date {
+  color: #b6bcbf;
+}
+
+.article__header {
+  font-family: "Roboto400slab";
+  font-size: 26px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  height: 59.8px;
+}
+
+.article__preview {
+  font-family: "Roboto400";
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+}
+
+.article__name {
+  font-family: "Roboto700";
+  font-size: 16px;
+  color: #b6bcbf;
+}
+
+.save-article__button:hover ~ .sign-in__button {
+  visibility: visible;
+}
+
+.delete-article__button:hover ~ .article-delete__tag {
+  visibility: visible;
+}
+
+.delete-article__button {
+  background-image: url(../../assets/delete-article.svg);
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
+.delete-article__button:hover {
+  background-image: url(../../assets/trash-hover.svg);
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
+.save-article__button:hover {
+  background-image: url(../../assets/save-article-hover.svg);
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
 }
 
 .article-card__name {
@@ -39,16 +148,49 @@
 .article__section {
   background-color: transparent;
   contain: content;
-  position: absolute;
+
   bottom: 100px;
   margin-right: 24px;
   margin-left: 24px;
+  bottom: 50px;
+}
+
+.article__name {
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
   .article-card {
-    width: 224px;
-    height: 420px;
+    position: relative;
+
+    background-color: #fff;
+    justify-content: center;
+  }
+
+  .article__section {
+    contain: content;
+
+    bottom: 100px;
+    margin-right: 24px;
+    margin-left: 24px;
+    bottom: 50px;
+  }
+
+  .article__preview {
+    font-family: "Roboto400";
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .article-card {
+    width: 288px;
+    height: 440px;
+  }
+
+  .article-card__image {
+    width: 288px;
+    height: 196px;
   }
 
   .article__section {
@@ -57,15 +199,15 @@
     bottom: 100px;
     margin-right: 24px;
     margin-left: 24px;
+    bottom: 0px;
+    height: 244px;
   }
 
-  .article-card__image {
-    width: 224px;
-    height: 150px;
+  .article__header {
+    height: 60px;
   }
 
   .article__preview {
-    font-family: "Roboto400";
-    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
   }
 }

@@ -8,7 +8,16 @@ function Footer() {
   return (
     <footer className="footer">
       <p className="footer__content">2024 Supersite Powered by News API</p>
-      <p className="footer__content2">2024</p>
+      <div className="footer-1__container">
+        <div className="footer-2__container">
+          <p className="footer__content2">Home</p>
+          <p className="footer__content3">TripleTen</p>
+        </div>
+        <div className="footer-3__container">
+          <img className="footer__content4" alt="fb logo" />
+          <img className="footer__content5" alt="gh logo" />
+        </div>
+      </div>
     </footer>
   );
 }

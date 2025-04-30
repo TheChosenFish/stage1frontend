@@ -1,5 +1,3 @@
-import { checkResponse } from "./api";
-
 export const baseUrl = "http://localhost:3000";
 
 export function getToken() {

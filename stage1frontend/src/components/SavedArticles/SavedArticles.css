@@ -1,10 +1,12 @@
 .saved__articles {
   font-family: "Roboto";
   max-width: 100vw;
-  max-height: 100vh;
+  max-height: 100%;
 }
 
 .saved-articles__header {
+  font-family: "Roboto400";
+  color: #1a1b2280;
   background-color: #fff;
   padding-top: 40px;
   padding-bottom: 28px;
@@ -14,12 +16,16 @@
 }
 
 .saved-articles__section-header {
+  font-family: "Roboto400";
+  line-height: 34px;
   margin-left: 104px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .saved-articles__keywords {
+  font-family: "Roboto700";
+  font-size: 18px;
   margin-left: 104px;
   margin-top: 30px;
   margin-bottom: 56px;
@@ -36,6 +42,7 @@
 .saved-articles__container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   padding: 0;
   background-color: rgba(245, 246, 247, 1);
@@ -60,7 +67,5 @@
   }
 
   .article-card__image {
-    width: 224px;
-    height: 150px;
   }
 }

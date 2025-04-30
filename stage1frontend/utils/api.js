@@ -1,36 +1,41 @@
-import { getToken, baseUrl } from "./auth";
+import { getCurrentDate, getWeekAgoDate } from "./constants";
 
-export function checkResponse(res) {
-  return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`);
-}
+console.log(import.meta.env.VITE_NEWS_API_KEY);
 
-export function getItems() {
-  return fetch(`${baseUrl}/items`, {
-    headers: {
-      "Content-Type": "application/json",
-      authorization: `Bearer ${getToken()}`,
-    },
-  }).then(checkResponse);
-}
+export const getArticle = (query) => {
+  return fetch(
+    `https://newsapi.org/v2/everything?q=${query}&from=${getCurrentDate()}&to=${getWeekAgoDate()}&apiKey=${
+      import.meta.env.VITE_NEWS_API_KEY
+    }`
+  ).then((res) => {
+    if (res.ok) {
+      return res.json();
+    } else {
+      return Promise.reject(`Error: ${res.status}`);
+    }
+  });
+};
 
-export function postItem({ name, weather, imageUrl }) {
-  console.log(name, weather, imageUrl);
-  return fetch(`${baseUrl}/items`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      authorization: `Bearer ${getToken()}`,
-    },
-    body: JSON.stringify({ name, imageUrl, weather }),
-  }).then(checkResponse);
-}
+export const saveArticle = (article) => {
+  console.log(article);
+  return new Promise((resolve, reject) => {
+    resolve(article);
+  });
+};
 
-export function removeItem(_id) {
-  return fetch(`${baseUrl}/items/${_id}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json",
-      authorization: `Bearer ${getToken()}`,
-    },
-  }).then(checkResponse);
-}
+export const deleteArticle = (article) => {
+  console.log(article);
+  return new Promise((resolve, reject) => {
+    resolve(article);
+  });
+};
+
+export const getResults = () => {
+  return fetch().then((res) => {
+    if (res.ok) {
+      return res.json();
+    } else {
+      return Promise.reject(`Error: ${res.status}`);
+    }
+  });
+};

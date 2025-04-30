@@ -5,7 +5,16 @@ import About from "../About/About";
 import SavedArticles from "../SavedArticles/SavedArticles";
 import Results from "../Results/Results";
 
-function Main({ isLoggedIn, isFound }) {
+function Main({
+  handleSaveArticle,
+  handleDeleteArticle,
+  savedNews,
+  isLoggedIn,
+  results,
+  hasSearched,
+  currentUser,
+  isLoading,
+}) {
   return (
     <main>
       <Routes>
@@ -13,7 +22,14 @@ function Main({ isLoggedIn, isFound }) {
           path="/"
           element={
             <>
-              <Results isLoggedIn={isLoggedIn} isFound={isFound} />
+              <Results
+                handleSaveArticle={handleSaveArticle}
+                results={results}
+                isLoggedIn={isLoggedIn}
+                savedNews={savedNews}
+                hasSearched={hasSearched}
+                isLoading={isLoading}
+              />
               <About />
             </>
           }
@@ -22,7 +38,13 @@ function Main({ isLoggedIn, isFound }) {
           path="/saved-news"
           element={
             <ProtectedRoute isLoggedIn={isLoggedIn}>
-              <SavedArticles />
+              <SavedArticles
+                handleSaveArticle={handleSaveArticle}
+                handleDeleteArticle={handleDeleteArticle}
+                savedNews={savedNews}
+                results={results}
+                currentUser={currentUser}
+              />
             </ProtectedRoute>
           }
         />
