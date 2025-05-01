@@ -1,8 +1,7 @@
-<!-- # React + Vite
+# News Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## This app is a great way to stay up to date with the latest news!
 
-Currently, two official plugins are available:
+### Simply type in a desired search term or keyword in the apps search bar, and choose from any of the articles in the results section. You can also save articles to come back to later as a logged in member of the application. Search away!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh -->
+#### https://thechosenfish.github.io/stage1frontend/
