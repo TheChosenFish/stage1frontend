@@ -1,7 +1,5 @@
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-import Preloader from "../Preloader/Preloader";
-import Results from "../Results/Results";
 import "./Searching.css";
 
 function Searching({ handleSearch }) {

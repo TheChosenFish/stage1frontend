@@ -57,15 +57,25 @@
     flex-direction: row;
 
     gap: 8px;
-    justify-content: normal;
-    margin-left: 40px;
+    justify-content: center;
     padding: 0;
     background-color: rgba(245, 246, 247, 1);
     padding-top: 32px;
     padding-bottom: 62px;
     height: max-content;
   }
+}
 
-  .article-card__image {
+@media screen and (max-width: 515px) {
+  .saved-articles__header {
+    margin-left: 16px;
+  }
+
+  .saved-articles__section-header {
+    margin-left: 16px;
+  }
+
+  .saved-articles__keywords {
+    margin-left: 16px;
   }
 }
