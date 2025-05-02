@@ -52,12 +52,12 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
         } ${isMenuOpen && "header_mobile-menu-open"}`}
       >
         <div
-          className={`nav__container ${
-            isMenuOpen && "nav__container_mobile-menu-open"
+          className={`header_nav__container ${
+            isMenuOpen && "header_nav__container_mobile-menu-open"
           } `}
         >
           <p
-            className="nav__title"
+            className="header_nav__title"
             style={{
               color: `${isSavedNews && !isMenuOpen ? "black" : "white"}`,
             }}
@@ -67,7 +67,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
           <button
             onClick={() => setIsMenuOpen((prev) => !prev)}
             type="button"
-            className={`menu__button ${getMenuButtonClass()}`}
+            className={`header_menu__button ${getMenuButtonClass()}`}
           ></button>
           {isLoggedIn}
           <div
@@ -83,7 +83,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                 }}
               >
                 <button
-                  className="nav__home"
+                  className="header_nav__home"
                   style={{
                     textDecoration: "none",
                     color: `${isSavedNews && !isMenuOpen ? "black" : "white"}`,
@@ -104,7 +104,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                 >
                   <button
                     type="button"
-                    className="nav__saved-news"
+                    className="header_nav__saved-news"
                     style={{
                       color: `${
                         isSavedNews && !isMenuOpen ? "black" : "white"
@@ -119,11 +119,11 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                 </Link>
               )}
               {isLoggedIn && (
-                <div className="logout__button-container">
+                <div className="header_logout__button-container">
                   <button
                     onClick={handleLogin}
                     type="button"
-                    className="logout__button"
+                    className="header_logout__button"
                     style={{
                       //color: `${isSavedNews ? "black" : "white"}`,
                       borderColor: `${
@@ -132,7 +132,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                     }}
                   >
                     <div
-                      className="button__text"
+                      className="header_button__text"
                       style={{
                         color: `${
                           isSavedNews && !isMenuOpen ? "black" : "white"
@@ -141,17 +141,20 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                     >
                       {currentUser.name}
                     </div>
-                    <img className="logout__icon" alt="logout-icon"></img>
+                    <img
+                      className="header_logout__icon"
+                      alt="logout-icon"
+                    ></img>
                   </button>
                 </div>
               )}
               {!isLoggedIn && (
                 <>
-                  <div className="nav__container-sign-in">
+                  <div className="header_nav__container-sign-in">
                     <button
                       onClick={handleLogin}
                       type="button"
-                      className="nav__sign-in"
+                      className="header_nav__sign-in"
                     >
                       Sign In
                     </button>

@@ -25,7 +25,7 @@
   flex-direction: row-reverse;
 }
 
-.save-article__button {
+.article-card_save-article__button {
   background-image: url(../../assets/save-article.svg);
   background-color: transparent;
   border: none;
@@ -33,7 +33,7 @@
   width: 40px;
 }
 
-.sign-in__button {
+.article-card_sign-in__button {
   background-color: #fff;
   border-radius: 10px;
   border: none;
@@ -53,7 +53,8 @@
   height: 40px;
   width: 40px;
 }
-.article-delete__tag {
+.article-card_article-delete__tag {
+  font-family: "Roboto500";
   background-color: #fff;
   border-radius: 10px;
   border: none;
@@ -95,15 +96,15 @@
   color: #b6bcbf;
 }
 
-.save-article__button:hover ~ .sign-in__button {
+.article-card_save-article__button:hover ~ .sign-in__button {
   visibility: visible;
 }
 
-.delete-article__button:hover ~ .article-delete__tag {
+.article-card_delete-article__button:hover ~ .article-delete__tag {
   visibility: visible;
 }
 
-.delete-article__button {
+.article-card_delete-article__button {
   background-image: url(../../assets/delete-article.svg);
   background-color: transparent;
   border: none;
@@ -111,7 +112,7 @@
   width: 40px;
 }
 
-.delete-article__button:hover {
+.article-card_delete-article__button:hover {
   background-image: url(../../assets/trash-hover.svg);
   background-color: transparent;
   border: none;
@@ -119,7 +120,7 @@
   width: 40px;
 }
 
-.save-article__button:hover {
+.article-card_save-article__button:hover {
   background-image: url(../../assets/save-article-hover.svg);
   background-color: transparent;
   border: none;
@@ -156,7 +157,7 @@
 }
 
 .article__name {
-  color: black;
+  color: #b6bcbf;
 }
 
 @media screen and (max-width: 768px) {

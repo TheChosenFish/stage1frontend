@@ -7,7 +7,7 @@
   margin-top: auto;
   background-color: #fff;
 }
-.footer-1__container {
+.footer-links__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,24 +22,24 @@
   color: rgba(182, 188, 191, 1);
 }
 
-.footer-2__container {
+.footer-word-links__container {
   display: flex;
   gap: 30px;
 }
-.footer__content2 {
+.footer__content-home {
   margin-top: auto;
 }
 
-.footer-3__container {
+.footer-imgs__container {
   display: flex;
   gap: 30px;
 }
-.footer__content4 {
+.footer__content-TT {
   background-image: url(../../assets/github.svg);
   background-repeat: no-repeat;
 }
 
-.footer__content5 {
+.footer__contentgh-logo {
   background-image: url(../../assets/fb.svg);
   background-repeat: no-repeat;
 }
@@ -49,40 +49,40 @@
     flex-direction: column-reverse;
   }
 
-  .footer-1__container {
+  .footer-links__container {
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .footer-2__container {
+  .footer-word-links__container {
     display: flex;
     gap: 0;
     flex-direction: column;
   }
 
-  .footer__content2 {
+  .footer__content-home {
     margin-top: auto;
     margin-left: 20px;
   }
 
-  .footer__content3 {
+  .footer__content-TT {
     margin-left: 20px;
   }
 
-  .footer-3__container {
+  .footer-imgs__container {
     display: flex;
     margin-bottom: 65px;
   }
 
-  .footer__content4 {
+  .footer__content-fb-logo {
     background-image: url(../../assets/github.svg);
     background-repeat: no-repeat;
     margin-right: 20px;
   }
 
-  .footer__content5 {
+  .footer__content-gh-logo {
     background-image: url(../../assets/fb.svg);
     background-repeat: no-repeat;
     margin-right: 20px;

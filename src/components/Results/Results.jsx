@@ -62,7 +62,7 @@ function Results({
         })}
       </ul>
       <button
-        className="show-more__button"
+        className="results_show-more__button"
         style={{ visibility: `${isSavedNews && "hidden"}` }}
         onClick={() => {
           handleShowMore();
