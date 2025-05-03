@@ -35,6 +35,7 @@ function RegisterModal({ onClose, onRegister, handleLogin }) {
       onSubmit={onSubmit}
       onClick={handleLogin}
     >
+      <h1 className="modal__title">Sign Up</h1>
       <label htmlFor="email" className="modal__label">
         Email{" "}
         <input

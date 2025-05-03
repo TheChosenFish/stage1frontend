@@ -1,6 +1,7 @@
 import Searching from "../Searching/Searching";
 import "./Header.css";
-
+import Arrow from "../../assets/ArrowLO.svg";
+import ArrowBlk from "../../assets/logout-blk.svg";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -53,8 +54,10 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
       >
         <div
           className={`header_nav__container ${
-            isMenuOpen && "header_nav__container_mobile-menu-open"
-          } `}
+            currentPage === "/saved-news"
+              ? "header_nav__container_saved-articles"
+              : ""
+          } ${isMenuOpen && "header_nav__container_mobile-menu-open"} `}
         >
           <p
             className="header_nav__title"
@@ -144,6 +147,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                     <img
                       className="header_logout__icon"
                       alt="logout-icon"
+                      src={isSavedNews ? ArrowBlk : Arrow}
                     ></img>
                   </button>
                 </div>

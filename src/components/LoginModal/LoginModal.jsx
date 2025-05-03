@@ -25,6 +25,7 @@ function LoginModal({ onClose, onLogin, handleRegister }) {
       onSubmit={onSubmit}
       onClick={handleRegister}
     >
+      <h1 className="modal__title">Sign In</h1>
       <label htmlFor="name" className="modal__label">
         Name{" "}
         <input

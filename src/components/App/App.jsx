@@ -8,12 +8,14 @@ import "./App.css";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
+import SuccessModal from "../SuccessModal/SuccessModal";
 import { signUp, login } from "../../../utils/auth";
+import { useMemo } from "react";
 function App() {
   const [results, setResults] = useState([]);
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isOverflowing, setIsOverflowing] = useState(false);
   const [savedNews, setSavedNews] = useState([]);
+  const [keyWord, setKeyWord] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [activeModal, setActiveModal] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -23,6 +25,13 @@ function App() {
     email: "",
     _id: "",
   });
+
+  //an array of all the keywords
+  const savedNewsKeywords = useMemo(() => {
+    return savedNews.map((savedArticle) => savedArticle.keyword);
+  }, [savedNews]);
+
+  console.log(savedNewsKeywords);
 
   const handleLogin = () => {
     setActiveModal("Login");
@@ -42,6 +51,7 @@ function App() {
 
   const handleSearch = (query) => {
     setIsLoading(true);
+    setKeyWord(query);
     getArticle(query)
       .then((data) => {
         // console.log(data);
@@ -56,7 +66,8 @@ function App() {
 
   //this function should be passed to the ArticleCard component so that twhen we click the bookmark icon it runs
   const handleSaveArticle = (article) => {
-    saveArticle(article)
+    const articleWithKeyword = { ...article, keyword: keyWord };
+    saveArticle(articleWithKeyword)
       .then((savedArticle) => {
         //add the article to the savedNews state array
         setSavedNews([...savedNews, savedArticle]);
@@ -108,7 +119,11 @@ function App() {
   const handleRegisterModalSubmit = ({ email, password, name }) => {
     return signUp({ email, password, name })
       .then((data) => {
-        handleLoginModalSubmit(email, password);
+        return handleLoginModalSubmit(email, password);
+      })
+      .then(() => {
+        //open the success modal
+        setActiveModal("Success");
       })
       .catch((error) => {
         console.error("Cannot Register", error);
@@ -162,6 +177,7 @@ function App() {
           handleSaveArticle={handleSaveArticle}
           handleDeleteArticle={handleDeleteArticle}
           savedNews={savedNews}
+          savedNewsKeywords={savedNewsKeywords}
           isLoggedIn={isLoggedIn}
           results={results}
           hasSearched={hasSearched}
@@ -183,6 +199,9 @@ function App() {
           onRegister={handleRegisterModalSubmit}
           onClose={closeActiveModal}
         />
+      )}
+      {activeModal === "Success" && (
+        <SuccessModal handleLogin={handleLogin} onClose={closeActiveModal} />
       )}
     </CurrentUserContext.Provider>
   );

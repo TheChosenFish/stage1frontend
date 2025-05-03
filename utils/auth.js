@@ -1,5 +1,11 @@
 export const baseUrl = "http://localhost:3000";
 
+export const checkResponse = (response) => {
+  if (response.ok) {
+    return response.json();
+  }
+};
+
 export function getToken() {
   return localStorage.getItem("jwt");
 }
@@ -21,24 +27,41 @@ export function login({ email, password }) {
 }
 
 export function signUp({ email, name, password }) {
-  console.log(email, name, password);
-  return fetch(`${baseUrl}/signup`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, name, password }),
-  })
-    .catch(console.error)
-    .then(checkResponse);
+  return new Promise((resolve, reject) => {
+    resolve({
+      token: "fake token",
+      user: {
+        name: "John Smith",
+        email: "JSmith@yahoo.com",
+        password: "booya567",
+      },
+    });
+  });
 }
+//   return fetch(`${baseUrl}/signup`, {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify({ email, name, password }),
+//   })
+//     .catch(console.error)
+//     .then(checkResponse);
+// }
 
 export function getCurrentUser() {
-  return fetch(`${baseUrl}/users/me`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-      authorization: `Bearer ${getToken()}`,
-    },
-  })
-    .catch(console.error)
-    .then(checkResponse);
+  return new Promise((resolve, reject) => {
+    resolve({
+      token: "fake token",
+      user: { name: "John Smith", email: "JSmith@yahoo.com" },
+    });
+  });
 }
+//   return fetch(`${baseUrl}/users/me`, {
+//     method: "GET",
+//     headers: {
+//       "Content-Type": "application/json",
+//       authorization: `Bearer ${getToken()}`,
+//     },
+//   })
+//     .catch(console.error)
+//     .then(checkResponse);
+// }

@@ -10,6 +10,14 @@ function ArticleCard({
 }) {
   const location = useLocation();
 
+  const date = new Date(article.publishedAt);
+
+  const publishedDate = date.toLocaleString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+
   const isSavedNewsRoute = location.pathname === "/saved-news";
   console.log(isSavedNewsRoute);
 
@@ -29,6 +37,7 @@ function ArticleCard({
               handleDeleteArticle(article);
             }}
           />
+          <button className="article-card__keyword">{article.keyword}</button>
           <p className="article-card_article-delete__tag">
             {" "}
             Remove from saved{" "}
@@ -55,7 +64,7 @@ function ArticleCard({
       <h2 className="article-card__name"></h2>
       <img src={article.urlToImage} className="article-card__image" />
       <div className="article__section">
-        <p className="article__date">{article.publishedAt}</p>
+        <p className="article__date">{publishedDate}</p>
         <p className="article__header">{article.title}</p>
         <p className="article__preview">{article.content}</p>
         <p className="article__name">{article.source.name}</p>

@@ -35,13 +35,20 @@
   gap: 30px;
 }
 .footer__content-TT {
-  background-image: url(../../assets/github.svg);
-  background-repeat: no-repeat;
 }
 
-.footer__contentgh-logo {
-  background-image: url(../../assets/fb.svg);
+.footer__content-gh-logo {
+  background-image: url(../../assets/Vector.svg);
   background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.footer__content-li-logo {
+  background-image: url(../../assets/linkedin-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
 }
 
 @media screen and (max-width: 515px) {
@@ -76,16 +83,14 @@
     margin-bottom: 65px;
   }
 
-  .footer__content-fb-logo {
-    background-image: url(../../assets/github.svg);
+  .footer__content-gh-logo {
     background-repeat: no-repeat;
-    margin-right: 20px;
+    background-size: contain;
   }
 
-  .footer__content-gh-logo {
+  .footer__content-fb-logo {
     background-image: url(../../assets/fb.svg);
     background-repeat: no-repeat;
-    margin-right: 20px;
   }
 
   .footer__content {

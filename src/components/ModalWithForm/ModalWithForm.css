@@ -91,7 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 360px;
+  width: 265px;
   height: 64px;
   margin-top: 42px;
   margin-left: auto;
@@ -136,7 +136,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 360px;
+  width: 265px;
   height: 64px;
   margin-top: 42px;
   background-color: #2f71e5;
@@ -177,3 +177,10 @@
     top: 207px;
   }
 }
+
+/* @media screen and (max-width: 410px) {
+  .modal__submit-btn {
+    position: relative;
+    left: -50px;
+  }
+} */

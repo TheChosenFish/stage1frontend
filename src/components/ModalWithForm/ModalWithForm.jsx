@@ -23,7 +23,7 @@ function ModalWithForm({
   return (
     <div onClick={handleOverLayClick} className={`modal modal_opened`}>
       <div className="modal__content">
-        <h1 className="modal__title">Sign in</h1>
+        <h1 className="modal__title"></h1>
         <button onClick={onClose} type="button" className="modal__close" />
         <form className="modal__form" onSubmit={handleFormSubmit}>
           {children}

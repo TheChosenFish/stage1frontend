@@ -16,8 +16,8 @@
 .header_location_saved-news {
   color: black;
   background-color: white;
-  border-bottom-color: black;
-  border-bottom-width: 1px;
+  /* border-bottom-color: black;
+  border-bottom-width: 1px; */
   background-image: none;
 }
 
@@ -39,7 +39,7 @@
 .header_nav__container_saved-articles {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
 }
 
 .header_nav__container-sign-in {
@@ -160,7 +160,6 @@
 }
 
 .header_logout__icon {
-  background-image: url(../../assets/logout.png);
   color: #fff;
   width: 24px;
   height: 24px;

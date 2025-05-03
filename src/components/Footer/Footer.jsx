@@ -14,8 +14,16 @@ function Footer() {
           <p className="footer__content-TT">TripleTen</p>
         </div>
         <div className="footer-imgs__container">
-          <img className="footer__content-fb-logo" alt="fb logo" />
-          <img className="footer__content-gh-logo" alt="gh logo" />
+          <a
+            className="footer__content-li-logo"
+            alt="Li logo"
+            href="https://www.linkedin.com/in/michael-bostick-513b14327/"
+          />
+          <a
+            className="footer__content-gh-logo"
+            alt="gh logo"
+            href="https://github.com/TheChosenFish"
+          />
         </div>
       </div>
     </footer>

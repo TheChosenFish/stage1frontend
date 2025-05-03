@@ -4,6 +4,7 @@ import ArticleCard from "../ArticleCard/ArticleCard";
 import NoResults from "../NoResults/NoResults";
 import { useEffect, useState } from "react";
 import Preloader from "../Preloader/Preloader";
+import SuccessModal from "../SuccessModal/SuccessModal";
 
 function Results({
   handleSaveArticle,
@@ -31,6 +32,14 @@ function Results({
       </section>
     );
   }
+
+  // if (handleLogin) {
+  //   return (
+  //     <div className="modal__content">
+  //       <SuccessModal />
+  //     </div>
+  //   );
+  // }
 
   if (results.length === 0 && !hasSearched) {
     return null;

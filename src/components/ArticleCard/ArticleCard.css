@@ -25,6 +25,22 @@
   flex-direction: row-reverse;
 }
 
+.article-card__keyword {
+  font-family: "Roboto500";
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  right: 265px;
+  border: none;
+  height: 40px;
+  margin: 0px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+
 .article-card_save-article__button {
   background-image: url(../../assets/save-article.svg);
   background-color: transparent;
@@ -69,6 +85,11 @@
 
 .article__date {
   color: #b6bcbf;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 24px;
+  margin-bottom: 16px;
 }
 
 .article__header {
@@ -79,6 +100,7 @@
   overflow: hidden;
   -webkit-line-clamp: 2;
   height: 59.8px;
+  margin-top: 8px;
 }
 
 .article__preview {
@@ -96,11 +118,11 @@
   color: #b6bcbf;
 }
 
-.article-card_save-article__button:hover ~ .sign-in__button {
+.article-card_save-article__button:hover ~ .article-card_sign-in__button {
   visibility: visible;
 }
 
-.article-card_delete-article__button:hover ~ .article-delete__tag {
+.article-card_delete-article__button:hover ~ .article-card_article-delete__tag {
   visibility: visible;
 }
 

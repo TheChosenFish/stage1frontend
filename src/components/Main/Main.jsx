@@ -13,6 +13,7 @@ function Main({
   hasSearched,
   currentUser,
   isLoading,
+  savedNewsKeywords,
 }) {
   return (
     <main>
@@ -43,6 +44,7 @@ function Main({
                 savedNews={savedNews}
                 results={results}
                 currentUser={currentUser}
+                savedNewsKeywords={savedNewsKeywords}
               />
             </ProtectedRoute>
           }
