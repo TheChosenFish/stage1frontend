@@ -65,7 +65,7 @@ function ArticleCard({
       <img src={article.urlToImage} className="article-card__image" />
       <div className="article__section">
         <p className="article__date">{publishedDate}</p>
-        <p className="article__header">{article.title}</p>
+        <h1 className="article__header">{article.title}</h1>
         <p className="article__preview">{article.content}</p>
         <p className="article__name">{article.source.name}</p>
       </div>

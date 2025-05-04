@@ -60,13 +60,15 @@ function Results({
       <ul className="results-section__list">
         {results.slice(0, numberVisibleCards).map((article) => {
           return (
-            <ArticleCard
-              handleSaveArticle={handleSaveArticle}
-              key={article.url}
-              article={article}
-              isLoggedIn={isLoggedIn}
-              savedNews={savedNews}
-            />
+            <li>
+              <ArticleCard
+                handleSaveArticle={handleSaveArticle}
+                key={article.url}
+                article={article}
+                isLoggedIn={isLoggedIn}
+                savedNews={savedNews}
+              />
+            </li>
           );
         })}
       </ul>

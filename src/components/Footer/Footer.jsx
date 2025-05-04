@@ -8,12 +8,12 @@ function Footer() {
   return (
     <footer className="footer">
       <p className="footer__content">2024 Supersite Powered by News API</p>
-      <div className="footer-links__container">
-        <div className="footer-word-links__container">
+      <ul className="footer-links__container">
+        <li className="footer-word-links__container">
           <p className="footer__content-home">Home</p>
           <p className="footer__content-TT">TripleTen</p>
-        </div>
-        <div className="footer-imgs__container">
+        </li>
+        <li className="footer-imgs__container">
           <a
             className="footer__content-li-logo"
             alt="Li logo"
@@ -24,8 +24,8 @@ function Footer() {
             alt="gh logo"
             href="https://github.com/TheChosenFish"
           />
-        </div>
-      </div>
+        </li>
+      </ul>
     </footer>
   );
 }
