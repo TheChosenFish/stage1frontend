@@ -12,9 +12,10 @@
 }
 
 .results__title {
+  font-family: "Roboto400slab";
   margin-right: auto;
   padding-left: 104px;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   margin-top: 0px;
 }
 
@@ -29,6 +30,7 @@
   background-color: rgba(245, 246, 247, 1);
   font-family: "Roboto";
   position: relative;
+  list-style: none;
 }
 
 .results_show-more__button {
@@ -67,6 +69,7 @@
   .results_show-more__button {
     left: 270px;
     margin-top: 22px;
+    margin-bottom: 40px;
     width: 240px;
     height: 56px;
     background-color: rgba(255, 255, 255, 1);

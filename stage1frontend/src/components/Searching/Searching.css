@@ -1,37 +1,38 @@
 .searching__container {
+  font-family: "Roboto400slab, Roboto400, Roboto700";
   color: aliceblue;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 8px;
-  box-sizing: border-box;
-
+  /* background-color: rgba(245, 246, 247, 1); */
+  height: 576px;
   width: 100%;
+  padding: 0;
+  z-index: 0;
 }
 
 .searching__header {
-  font-family: "Roboto400slab";
   width: 608px;
   height: 108px;
   font-size: 60px;
-  margin-top: 80px;
+  margin-top: 160px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
 }
 
-.searching__search__explain {
+.search__explain {
   font-family: "Roboto400";
   font-size: 18px;
   font-weight: 400;
   height: 24px;
   width: 608px;
-  margin-top: 85px;
+  margin-top: 64px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 88px;
+  margin-bottom: 232px;
 }
 
-.searching__search__bar {
+.search__bar {
   width: 608px;
   max-width: 100%;
   position: relative;
@@ -39,7 +40,7 @@
   margin-right: auto;
   margin-bottom: 80px;
 }
-.searching__search__input {
+.search__input {
   font-family: "Roboto400";
   font-size: 16px;
   height: 64px;
@@ -48,7 +49,7 @@
   border: solid, 1px, #fff;
 }
 
-.searching__search__button {
+.search__button {
   font-family: "Roboto500";
   font-size: 18px;
   line-height: 24px;
@@ -71,9 +72,11 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    /* height: 576px; */
     width: 100%;
-    padding: 10px;
+    padding: 0;
   }
 
   .searching__header {
@@ -86,7 +89,7 @@
     width: 385px;
   }
 
-  .searching__search__explain {
+  .search__explain {
     margin-top: 0px;
     margin-bottom: 48px;
     margin-left: auto;
@@ -96,7 +99,7 @@
     height: 48px;
   }
 
-  .searching__search__bar {
+  .search__bar {
     width: 448px;
     height: 56px;
     margin-bottom: 48px;
@@ -104,11 +107,11 @@
     margin-left: auto;
   }
 
-  .searching__search__input {
+  .search__input {
     height: 52px;
   }
 
-  .searching__search__button {
+  .search__button {
     width: 160px;
     height: 56px;
     position: absolute;
@@ -120,22 +123,21 @@
 @media screen and (max-width: 515px) {
   .searching__header {
     font-size: 36px;
-    line-height: 40px;
-    margin-top: 0px;
+    margin-top: 38px;
     margin-bottom: 16px;
-    /* padding: 0 16px; */
-    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
     height: 80px;
     width: 100%;
     max-width: 285px;
   }
 
-  .searching__search-bar__container {
+  .search-bar__container {
     display: flex;
     flex-direction: column;
   }
 
-  .searching__search__bar {
+  .search__bar {
     width: 288px;
     max-width: 100%;
     position: relative;
@@ -147,38 +149,34 @@
   .searching__container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     font-family: "Roboto400slab";
     color: aliceblue;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 536px; */
-    box-sizing: border-box;
+    height: 576px;
     width: 100%;
-    padding: 20px;
+    padding: 0;
   }
 
-  .searching__search__explain {
-    max-width: 100%;
+  .search__explain {
+    width: 100%;
     height: 80px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 122px;
   }
 
-  .searching__search__input {
+  .search__input {
     width: 288px;
     height: 56px;
-    position: absolute;
-    right: -8px;
   }
 
-  .searching__search__button {
+  .search__button {
     width: 288px;
     height: 56px;
     position: absolute;
     top: 80px;
-    right: -5px;
+    right: 0px;
   }
 }

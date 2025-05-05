@@ -69,10 +69,14 @@
 @media screen and (max-width: 515px) {
   .saved-articles__header {
     margin-left: 16px;
+    padding-bottom: 0px;
+    padding-top: 8px;
   }
 
   .saved-articles__section-header {
-    margin-left: 16px;
+    margin-left: 0px;
+    padding: 16px;
+    box-sizing: border-box;
   }
 
   .saved-articles__keywords {

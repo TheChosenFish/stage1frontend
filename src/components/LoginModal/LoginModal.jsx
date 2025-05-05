@@ -19,7 +19,7 @@ function LoginModal({ onClose, onLogin, handleRegister }) {
   return (
     <ModalWithForm
       buttonText="Login"
-      secondButtonText="or Register"
+      secondButtonText="Register"
       title="Login"
       onClose={onClose}
       onSubmit={onSubmit}

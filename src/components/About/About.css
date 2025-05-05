@@ -6,7 +6,8 @@
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 32px;
+  padding-right: 216px;
+  padding-left: 104px;
   box-sizing: border-box;
 }
 
@@ -19,12 +20,13 @@
 }
 
 .about__author-section {
-  margin-left: 50px;
+  margin-left: 56px;
 }
 
 .about__author-header {
+  font-family: "Roboto400slab";
   margin-right: 216px;
-  /* margin-bottom: none; */
+  margin-bottom: 24px;
   margin-top: 131px;
   width: 100%;
   /* height: 46px; */
@@ -49,12 +51,14 @@
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1070px) {
   .about__section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    padding-bottom: 61px;
   }
 
   .about__image {
@@ -113,9 +117,11 @@
   }
 
   .about__author-header {
-    height: 24px;
+    height: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
+    display: flex;
+    justify-content: center;
   }
 }

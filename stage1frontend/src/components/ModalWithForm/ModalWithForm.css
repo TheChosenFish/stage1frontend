@@ -58,7 +58,6 @@
   width: 100%;
   box-sizing: border-box;
   border-radius: 16px;
-  padding-top: 0px;
 }
 
 .modal__form {
@@ -97,7 +96,7 @@
   margin-top: 42px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #e6e8eb;
+  background-color: rgba(0, 0, 0, 0.3);
   border: none;
   border-radius: 100px;
   color: #fff;
@@ -115,7 +114,7 @@
   background-color: #fff;
   border: none;
   border-radius: 8px;
-  color: #2f71e5;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .modal__submit-btn2:hover {
@@ -131,6 +130,7 @@
   background-color: #fff;
   border: none;
   border-radius: 8px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .modal__submit-btn:hover {
@@ -140,7 +140,7 @@
   width: 360px;
   height: 64px;
   margin-top: 42px;
-  background-color: #2f71e5;
+  background-color: #000;
   border: none;
   border-radius: 100px;
   color: #fff;
@@ -178,10 +178,3 @@
     top: 207px;
   }
 }
-
-/* @media screen and (max-width: 560px) {
-  .modal__close {
-    top: -45px;
-    bottom: 40px;
-  }
-} */

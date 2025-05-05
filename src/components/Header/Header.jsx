@@ -18,9 +18,9 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
 
   function getMenuButtonClass() {
     if (isSavedNews && !isMenuOpen) {
-      return "menu__button_color_black";
+      return "header__menu__button_color_black";
     } else if (isMenuOpen) {
-      return "menu__button_type_close";
+      return "header__menu__button_type_close";
     } else {
       return "";
     }
@@ -49,18 +49,18 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
     <>
       <header
         className={`header ${
-          currentPage === "/saved-news" ? "header_location_saved-news" : ""
-        } ${isMenuOpen && "header_mobile-menu-open"}`}
+          currentPage === "/saved-news" ? "header__location_saved-news" : ""
+        } ${isMenuOpen && "header__mobile-menu-open"}`}
       >
         <div
-          className={`header_nav__container ${
+          className={`header__nav__container ${
             currentPage === "/saved-news"
-              ? "header_nav__container_saved-articles"
+              ? "header__nav__container_saved-articles"
               : ""
-          } ${isMenuOpen && "header_nav__container_mobile-menu-open"} `}
+          } ${isMenuOpen && "header__nav__container_mobile-menu-open"} `}
         >
           <p
-            className="header_nav__title"
+            className="header__nav__title"
             style={{
               color: `${isSavedNews && !isMenuOpen ? "black" : "white"}`,
             }}
@@ -70,12 +70,12 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
           <button
             onClick={() => setIsMenuOpen((prev) => !prev)}
             type="button"
-            className={`header_menu__button ${getMenuButtonClass()}`}
+            className={`header__menu__button ${getMenuButtonClass()}`}
           ></button>
           {isLoggedIn}
           <div
-            className={`header-buttons__container ${
-              isMenuOpen && "header-buttons__container-visible"
+            className={`header__buttons__container ${
+              isMenuOpen && "header__buttons__container-visible"
             }`}
           >
             <ul className="header__buttons">
@@ -86,7 +86,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                 }}
               >
                 <button
-                  className="header_nav__home"
+                  className="header__nav__home"
                   style={{
                     textDecoration: "none",
                     color: `${isSavedNews && !isMenuOpen ? "black" : "white"}`,
@@ -107,7 +107,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                 >
                   <button
                     type="button"
-                    className="header_nav__saved-news"
+                    className="header__nav__saved-news"
                     style={{
                       color: `${
                         isSavedNews && !isMenuOpen ? "black" : "white"
@@ -122,11 +122,11 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                 </Link>
               )}
               {isLoggedIn && (
-                <div className="header_logout__button-container">
+                <div className="header__logout__button-container">
                   <button
                     onClick={handleLogin}
                     type="button"
-                    className="header_logout__button"
+                    className="header__logout__button"
                     style={{
                       //color: `${isSavedNews ? "black" : "white"}`,
                       borderColor: `${
@@ -135,7 +135,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                     }}
                   >
                     <div
-                      className="header_button__text"
+                      className="header__button__text"
                       style={{
                         color: `${
                           isSavedNews && !isMenuOpen ? "black" : "white"
@@ -145,7 +145,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                       {currentUser.name}
                     </div>
                     <img
-                      className="header_logout__icon"
+                      className="header__logout__icon"
                       alt="logout-icon"
                       src={isSavedNews ? ArrowBlk : Arrow}
                     ></img>
@@ -154,11 +154,11 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
               )}
               {!isLoggedIn && (
                 <>
-                  <div className="header_nav__container-sign-in">
+                  <div className="header__nav__container-sign-in">
                     <button
                       onClick={handleLogin}
                       type="button"
-                      className="header_nav__sign-in"
+                      className="header__nav__sign-in"
                     >
                       Sign In
                     </button>

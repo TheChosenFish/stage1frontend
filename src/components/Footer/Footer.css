@@ -11,23 +11,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 37px;
-  margin-right: 20px;
+  gap: 40px;
+  margin-right: 104px;
 }
 
 .footer__content {
   margin-top: auto;
-  margin-left: 20px;
+  margin-left: 104px;
   margin-bottom: 24px;
   color: rgba(182, 188, 191, 1);
 }
 
 .footer-word-links__container {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 .footer__content-home {
   margin-top: auto;
+  text-decoration: none;
+  color: black;
 }
 
 .footer-imgs__container {
@@ -35,6 +37,8 @@
   gap: 30px;
 }
 .footer__content-TT {
+  text-decoration: none;
+  color: black;
 }
 
 .footer__content-gh-logo {
@@ -51,7 +55,16 @@
   height: 24px;
 }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 810px) {
+  .footer__content {
+    margin-left: 40px;
+  }
+
+  .footer-links__container {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 630px) {
   .footer {
     flex-direction: column-reverse;
   }
@@ -59,29 +72,34 @@
   .footer-links__container {
     display: flex;
     width: 100%;
+    gap: 40px;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 0px;
+    margin-right: 18px;
+    margin-top: 0px;
   }
 
   .footer-word-links__container {
     display: flex;
-    gap: 0;
+    gap: 40px;
     flex-direction: column;
+    margin-top: 0px;
   }
 
   .footer__content-home {
     margin-top: auto;
-    margin-left: 20px;
+    margin-left: 16px;
   }
 
   .footer__content-TT {
-    margin-left: 20px;
+    margin-left: 16px;
   }
 
   .footer-imgs__container {
     display: flex;
     margin-bottom: 65px;
+    gap: 24px;
   }
 
   .footer__content-gh-logo {
@@ -97,5 +115,6 @@
   .footer__content {
     margin-top: auto;
     color: rgba(182, 188, 191, 1);
+    margin-left: 0px;
   }
 }

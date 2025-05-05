@@ -7,11 +7,17 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <p className="footer__content">2024 Supersite Powered by News API</p>
+      <p className="footer__content">2025 Supersite Powered by News API</p>
       <ul className="footer-links__container">
         <li className="footer-word-links__container">
-          <p className="footer__content-home">Home</p>
-          <p className="footer__content-TT">TripleTen</p>
+          <a className="footer__content-home" alt="home link" href="https://google.com/">Home</a>
+          <a
+            className="footer__content-TT"
+            alt="TT logo"
+            href="https://tripleten.com/"
+          >
+            TripleTen
+          </a>
         </li>
         <li className="footer-imgs__container">
           <a

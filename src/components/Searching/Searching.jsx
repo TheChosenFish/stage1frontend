@@ -21,27 +21,30 @@ function Searching({ handleSearch }) {
   };
 
   return (
-    <section className="searching__container">
-      <h1 className="searching__header">Whats going on in the world? </h1>
-      <p className="searching_search__explain">
-        Find the latest news on any topic and save them in your personal account
-      </p>
-      <div className="searching_search-bar__container">
-        <form onSubmit={handleSubmit} className="searching_search__bar">
-          <input
-            type="search-bar"
-            className="searching_search__input"
-            id="search-bar"
-            placeholder="   Search "
-            autoComplete="search"
-            onChange={handleQueryChange}
-            value={query}
-          />
-          <button type="submit" className="searching_search__button">
-            {" "}
-            Search
-          </button>
-        </form>
+    <section className="searching">
+      <div className="searching__container">
+        <h1 className="searching__header">Whats going on in the world? </h1>
+        <p className="searching__search__explain">
+          Find the latest news on any topic and save them in your personal
+          account
+        </p>
+        <div className="searching__search-bar__container">
+          <form onSubmit={handleSubmit} className="searching__search__bar">
+            <input
+              type="search-bar"
+              className="searching__search__input"
+              id="search-bar"
+              placeholder="   Search "
+              autoComplete="search"
+              onChange={handleQueryChange}
+              value={query}
+            />
+            <button type="submit" className="searching__search__button">
+              {" "}
+              Search
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );
