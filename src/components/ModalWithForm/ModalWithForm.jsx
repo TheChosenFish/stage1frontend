@@ -31,7 +31,6 @@ function ModalWithForm({
             <button type="submit" className="modal__submit-btn">
               {buttonText}
             </button>
-            or
             <button
               onClick={onClick}
               type="button"

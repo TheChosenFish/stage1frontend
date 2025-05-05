@@ -257,6 +257,7 @@
     height: 56px;
     padding: 0px;
     margin-top: 30px;
+    margin-bottom: 24px;
   }
   .header__buttons__container {
     width: 100%;
@@ -277,5 +278,6 @@
     padding-left: 0px;
     position: initial;
     margin-right: 0;
+    gap: 0px;
   }
 }
