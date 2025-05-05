@@ -16,6 +16,7 @@
   width: 464px;
   border-radius: 1000px;
   margin-top: 80px;
+  margin-bottom: 61px;
   flex-shrink: 0;
 }
 
@@ -35,7 +36,7 @@
 
 .about__author-para {
   font-family: "Roboto400";
-  font-size: 18px;
+  font-size: 27px;
   margin-top: 24px;
   /* height: 120px;
   width: 600px; */
