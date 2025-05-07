@@ -53,14 +53,14 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
         } ${isMenuOpen && "header__mobile-menu-open"}`}
       >
         <div
-          className={`header__nav__container ${
+          className={`header__nav-container ${
             currentPage === "/saved-news"
-              ? "header__nav__container_saved-articles"
+              ? "header__nav-container_saved-articles"
               : ""
-          } ${isMenuOpen && "header__nav__container_mobile-menu-open"} `}
+          } ${isMenuOpen && "header__nav-container_mobile-menu-open"} `}
         >
           <p
-            className="header__nav__title"
+            className="header__nav-title"
             style={{
               color: `${isSavedNews && !isMenuOpen ? "black" : "white"}`,
             }}
@@ -70,12 +70,12 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
           <button
             onClick={() => setIsMenuOpen((prev) => !prev)}
             type="button"
-            className={`header__menu__button ${getMenuButtonClass()}`}
+            className={`header__menu-button ${getMenuButtonClass()}`}
           ></button>
           {isLoggedIn}
           <div
-            className={`header__buttons__container ${
-              isMenuOpen && "header__buttons__container-visible"
+            className={`header__buttons-container ${
+              isMenuOpen && "header__buttons-container-visible"
             }`}
           >
             <ul className="header__buttons">
@@ -86,7 +86,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                 }}
               >
                 <button
-                  className="header__nav__home"
+                  className="header__buttons-nav-home"
                   style={{
                     textDecoration: "none",
                     color: `${isSavedNews && !isMenuOpen ? "black" : "white"}`,
@@ -107,7 +107,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                 >
                   <button
                     type="button"
-                    className="header__nav__saved-news"
+                    className="header__nav-saved-news"
                     style={{
                       color: `${
                         isSavedNews && !isMenuOpen ? "black" : "white"
@@ -122,11 +122,11 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                 </Link>
               )}
               {isLoggedIn && (
-                <div className="header__logout__button-container">
+                <div className="header__logout-button-container">
                   <button
                     onClick={handleLogin}
                     type="button"
-                    className="header__logout__button"
+                    className="header__logout-button"
                     style={{
                       //color: `${isSavedNews ? "black" : "white"}`,
                       borderColor: `${
@@ -135,7 +135,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                     }}
                   >
                     <div
-                      className="header__button__text"
+                      className="header__button-text"
                       style={{
                         color: `${
                           isSavedNews && !isMenuOpen ? "black" : "white"
@@ -145,7 +145,7 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                       {currentUser.name}
                     </div>
                     <img
-                      className="header__logout__icon"
+                      className="header__logout-icon"
                       alt="logout-icon"
                       src={isSavedNews ? ArrowBlk : Arrow}
                     ></img>
@@ -154,11 +154,11 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
               )}
               {!isLoggedIn && (
                 <>
-                  <div className="header__nav__container-sign-in">
+                  <div className="header__nav-container-sign-in">
                     <button
                       onClick={handleLogin}
                       type="button"
-                      className="header__nav__sign-in"
+                      className="header__nav-sign-in"
                     >
                       Sign In
                     </button>

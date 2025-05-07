@@ -61,11 +61,11 @@ function ArticleCard({
         </div>
       )}
 
-      <h2 className="article-card__name"></h2>
+      <h1 className="article-card__name"></h1>
       <img src={article.urlToImage} className="article-card__image" />
       <div className="article__section">
         <p className="article__date">{publishedDate}</p>
-        <h1 className="article__header">{article.title}</h1>
+        <h2 className="article__header">{article.title}</h2>
         <p className="article__preview">{article.content}</p>
         <p className="article__name">{article.source.name}</p>
       </div>

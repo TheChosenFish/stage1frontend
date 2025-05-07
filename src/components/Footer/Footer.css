@@ -16,17 +16,19 @@
 }
 
 .footer__content {
+  font-family: "Roboto400";
   margin-top: auto;
   margin-left: 104px;
   margin-bottom: 24px;
   color: rgba(182, 188, 191, 1);
 }
 
-.footer-word-links__container {
+.footer-links__words-container {
   display: flex;
   gap: 40px;
 }
-.footer__content-home {
+.footer-links__home {
+  font-family: "Roboto400";
   margin-top: auto;
   text-decoration: none;
   color: black;
@@ -36,18 +38,19 @@
   display: flex;
   gap: 30px;
 }
-.footer__content-TT {
+.footer-links__TT {
+  font-family: "Roboto400";
   text-decoration: none;
   color: black;
 }
 
-.footer__content-gh-logo {
+.footer-imgs__gh-logo {
   background-image: url(../../assets/Vector.svg);
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
 }
-.footer__content-li-logo {
+.footer-imgs__li-logo {
   background-image: url(../../assets/linkedin-svgrepo-com.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -80,19 +83,19 @@
     margin-top: 0px;
   }
 
-  .footer-word-links__container {
+  .footer-links__words-container {
     display: flex;
     gap: 40px;
     flex-direction: column;
     margin-top: 0px;
   }
 
-  .footer__content-home {
+  .footer-links__home {
     margin-top: auto;
     margin-left: 16px;
   }
 
-  .footer__content-TT {
+  .footer-links__TT {
     margin-left: 16px;
   }
 
@@ -102,14 +105,9 @@
     gap: 24px;
   }
 
-  .footer__content-gh-logo {
+  .footer-imgs__gh-logo {
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-  .footer__content-fb-logo {
-    background-image: url(../../assets/fb.svg);
-    background-repeat: no-repeat;
   }
 
   .footer__content {
