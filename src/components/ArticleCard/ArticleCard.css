@@ -41,7 +41,7 @@
   visibility: visible;
 }
 
-.article-card_save-article__button {
+.article-card__save-article-button {
   background-image: url(../../assets/save-article.svg);
   background-color: transparent;
   border: none;
@@ -49,7 +49,7 @@
   width: 40px;
 }
 
-.article-card_sign-in__button {
+.article-card__sign-in-button {
   background-color: #fff;
   border-radius: 10px;
   border: none;
@@ -69,7 +69,7 @@
   height: 40px;
   width: 40px;
 }
-.article-card_article-delete__tag {
+.article-card__article-delete-tag {
   font-family: "Roboto500";
   background-color: #fff;
   border-radius: 10px;
@@ -118,15 +118,15 @@
   color: #b6bcbf;
 }
 
-.article-card_save-article__button:hover ~ .article-card_sign-in__button {
+.article-card__save-article-button:hover ~ .article-card__sign-in-button {
   visibility: visible;
 }
 
-.article-card_delete-article__button:hover ~ .article-card_article-delete__tag {
+.article-card__delete-article-button:hover ~ .article-card__article-delete-tag {
   visibility: visible;
 }
 
-.article-card_delete-article__button {
+.article-card__delete-article-button {
   background-image: url(../../assets/delete-article.svg);
   background-color: transparent;
   border: none;
@@ -134,7 +134,7 @@
   width: 40px;
 }
 
-.article-card_delete-article__button:hover {
+.article-card__delete-article-button:hover {
   background-image: url(../../assets/trash-hover.svg);
   background-color: transparent;
   border: none;
@@ -142,7 +142,7 @@
   width: 40px;
 }
 
-.article-card_save-article__button:hover {
+.article-card__save-article-button:hover {
   background-image: url(../../assets/save-article-hover.svg);
   background-color: transparent;
   border: none;

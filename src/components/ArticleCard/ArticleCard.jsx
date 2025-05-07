@@ -32,13 +32,13 @@ function ArticleCard({
       {isSavedNewsRoute ? (
         <div className="article-card__delete-container">
           <button
-            className="article-card_delete-article__button"
+            className="article-card__delete-article-button"
             onClick={() => {
               handleDeleteArticle(article);
             }}
           />
           <button className="article-card__keyword">{article.keyword}</button>
-          <p className="article-card_article-delete__tag">
+          <p className="article-card__article-delete-tag">
             {" "}
             Remove from saved{" "}
           </p>
@@ -46,7 +46,7 @@ function ArticleCard({
       ) : (
         <div className="article-card__button-container">
           <button
-            className={`article-card_save-article__button ${
+            className={`article-card__save-article-button ${
               isSaved ? "article-card__saved" : ""
             }`}
             onClick={() => {
@@ -54,7 +54,7 @@ function ArticleCard({
             }}
           />
           {!isLoggedIn && (
-            <p className="article-card_sign-in__button">
+            <p className="article-card__sign-in-button">
               Sign in to save articles{" "}
             </p>
           )}
