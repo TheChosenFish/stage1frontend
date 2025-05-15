@@ -64,12 +64,10 @@ function App() {
       });
   };
 
-  //this function should be passed to the ArticleCard component so that twhen we click the bookmark icon it runs
   const handleSaveArticle = (article) => {
     const articleWithKeyword = { ...article, keyword: keyWord };
     saveArticle(articleWithKeyword)
       .then((savedArticle) => {
-        //add the article to the savedNews state array
         setSavedNews([...savedNews, savedArticle]);
         console.log(savedArticle);
       })
@@ -79,7 +77,6 @@ function App() {
   const handleDeleteArticle = (article) => {
     deleteArticle(article)
       .then((deletedArticle) => {
-        //create a new array that is the previous savedNews array, but we filter out the article that we want to delete
         const updatedSavedNews = savedNews.filter((currentArticle) => {
           return deletedArticle.url !== currentArticle.url;
         });
@@ -88,9 +85,6 @@ function App() {
       })
       .catch(console.error);
   };
-
-  // console.log(savedNews);
-  // const handleDeleteArticle = (article) => {};
 
   function closeModal(e) {
     if (
@@ -154,15 +148,6 @@ function App() {
     document.addEventListener("keydown", handleCloseEsc);
     return () => document.removeEventListener("keydown", handleCloseEsc);
   }, [activeModal]);
-  // const handleSearchSubmit
-
-  // useEffect(() => {
-  //   getArticle(dates, APIKey)
-  //     .then((data) => {
-  //       console.log(data);
-  //     })
-  //     .catch(console.error);
-  // }, []);
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
