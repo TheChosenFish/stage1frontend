@@ -1,0 +1,184 @@
+.searching__container {
+  color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8px;
+  box-sizing: border-box;
+
+  width: 100%;
+}
+
+.searching__header {
+  font-family: "Roboto400slab";
+  width: 608px;
+  height: 108px;
+  font-size: 60px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.searching__search-explain {
+  font-family: "Roboto400";
+  font-size: 18px;
+  font-weight: 400;
+  height: 24px;
+  width: 608px;
+  margin-top: 85px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 88px;
+}
+
+.searching__search-bar {
+  width: 608px;
+  max-width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+.searching__search-input {
+  font-family: "Roboto400";
+  font-size: 16px;
+  height: 64px;
+  width: 100%;
+  border-radius: 100px;
+  border: solid, 1px, #fff;
+}
+
+.searching__search-button {
+  font-family: "Roboto500";
+  font-size: 18px;
+  line-height: 24px;
+  background-color: rgba(47, 113, 229, 1);
+  border-radius: 100px;
+  border: solid, 1px, rgba(47, 113, 229, 1);
+  width: 168px;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  right: -6px;
+}
+
+@media screen and (max-width: 768px) {
+  .searching__container {
+    font-family: "Roboto400slab";
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .searching__header {
+    font-size: 36px;
+    margin-top: 38px;
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 80px;
+    width: 385px;
+  }
+
+  .searching__search-explain {
+    margin-top: 0px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    width: 452px;
+    height: 48px;
+  }
+
+  .searching__search-bar {
+    width: 448px;
+    height: 56px;
+    margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .searching__search-input {
+    height: 52px;
+  }
+
+  .searching__search-button {
+    width: 160px;
+    height: 56px;
+    position: absolute;
+    top: 0px;
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .searching__header {
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    /* padding: 0 16px; */
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    max-width: 285px;
+  }
+
+  .searching__search-bar-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searching__search-bar {
+    width: 288px;
+    max-width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+  }
+
+  .searching__container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    font-family: "Roboto400slab";
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 536px; */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .searching__search-explain {
+    max-width: 100%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 122px;
+  }
+
+  .searching__search-input {
+    width: 288px;
+    height: 56px;
+    position: absolute;
+    right: -8px;
+  }
+
+  .searching__search-button {
+    width: 288px;
+    height: 56px;
+    position: absolute;
+    top: 80px;
+    right: -5px;
+  }
+}

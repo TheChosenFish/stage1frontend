@@ -1,0 +1,116 @@
+.results {
+  width: 100%;
+  background-color: rgba(245, 246, 247, 1);
+  display: flex;
+  padding-top: 40px;
+  flex-direction: column;
+  font-family: "Roboto";
+}
+
+.results__search-loader {
+  text-align: center;
+}
+
+.results__title {
+  font-family: "Roboto400slab";
+  margin-right: auto;
+  padding-left: 104px;
+  margin-bottom: 32px;
+  margin-top: 0px;
+}
+
+.results-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 0;
+  margin-top: 0px;
+  height: max-content;
+  background-color: rgba(245, 246, 247, 1);
+  font-family: "Roboto";
+  position: relative;
+  list-style: none;
+}
+
+.results_show-more__button {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 576px;
+  background-color: #fff;
+  border-radius: 100px;
+  border: solid, 1px, #fff;
+  width: 288px;
+  height: 64px;
+  color: black;
+}
+
+.results_show-more__button:hover {
+  margin-top: 64px;
+  left: 576px;
+  background-color: rgba(232, 232, 232, 1);
+  border-radius: 100px;
+  border: solid, 1px, rgba(232, 232, 232, 1);
+  width: 288px;
+  height: 64px;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .results__title {
+    padding-top: 0px;
+    margin-right: auto;
+    padding-left: 40px;
+    margin-bottom: 32px;
+  }
+
+  .results_show-more__button {
+    left: 270px;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    width: 240px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .results_show-more__button:hover {
+    left: 20px;
+    margin-top: 22px;
+    width: 240px;
+    height: 56px;
+    background-color: rgba(232, 232, 232, 1);
+  }
+
+  .results-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    gap: 40px 20px;
+    padding: 0;
+    height: max-content;
+    background-color: rgba(245, 246, 247, 1);
+    font-family: "Roboto";
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .results_show-more__button {
+    left: 20px;
+    margin-top: 22px;
+    width: 240px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .results_show-more__button:hover {
+    left: 20px;
+    margin-top: 22px;
+    width: 240px;
+    height: 56px;
+    background-color: rgba(232, 232, 232, 1);
+  }
+}

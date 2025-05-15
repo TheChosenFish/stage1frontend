@@ -1,0 +1,118 @@
+.footer {
+  display: flex;
+  font-family: "Roboto";
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+  background-color: #fff;
+}
+.footer-links__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-right: 104px;
+}
+
+.footer__content {
+  font-family: "Roboto400";
+  margin-top: auto;
+  margin-left: 104px;
+  margin-bottom: 24px;
+  color: rgba(182, 188, 191, 1);
+}
+
+.footer-links__words-container {
+  display: flex;
+  gap: 40px;
+}
+.footer-links__home {
+  font-family: "Roboto400";
+  margin-top: auto;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-imgs__container {
+  display: flex;
+  gap: 30px;
+}
+.footer-links__TT {
+  font-family: "Roboto400";
+  text-decoration: none;
+  color: black;
+}
+
+.footer-imgs__gh-logo {
+  background-image: url(../../assets/Vector.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+.footer-imgs__li-logo {
+  background-image: url(../../assets/linkedin-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 810px) {
+  .footer__content {
+    margin-left: 40px;
+  }
+
+  .footer-links__container {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer-links__container {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin-right: 18px;
+    margin-top: 0px;
+  }
+
+  .footer-links__words-container {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .footer-links__home {
+    margin-top: auto;
+    margin-left: 16px;
+  }
+
+  .footer-links__TT {
+    margin-left: 16px;
+  }
+
+  .footer-imgs__container {
+    display: flex;
+    margin-bottom: 65px;
+    gap: 24px;
+  }
+
+  .footer-imgs__gh-logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .footer__content {
+    margin-top: auto;
+    color: rgba(182, 188, 191, 1);
+    margin-left: 0px;
+  }
+}
