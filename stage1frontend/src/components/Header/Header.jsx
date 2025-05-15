@@ -125,7 +125,6 @@ function Header({ handleLogin, isLoggedIn, handleSearch, currentUser }) {
                     type="button"
                     className="logout__button"
                     style={{
-                      //color: `${isSavedNews ? "black" : "white"}`,
                       borderColor: `${
                         isSavedNews && !isMenuOpen ? "black" : "white"
                       }`,

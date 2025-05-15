@@ -1,4 +1,4 @@
-export const baseUrl = "http://localhost:3000";
+export const baseUrl = "http://localhost:3001";
 
 export function getToken() {
   return localStorage.getItem("jwt");
