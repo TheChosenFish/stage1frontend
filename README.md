@@ -1,7 +1,32 @@
 # News Finder
 
-## This app is a great way to stay up to date with the latest news!
+This app is designed to help users locate and save news articles in an organized place on the web
 
-### Simply type in a desired search term or keyword in the apps search bar, and choose from any of the articles in the results section. You can also save articles to come back to later as a logged in member of the application. Search away!
+## Table of Contents
 
-#### https://thechosenfish.github.io/stage1frontend/
+- Usage
+- Purpose
+- Technology
+- Deployment
+
+## Usage
+
+To use this app simply type a keyword into the search bar and scan the articles that are provided from the search. The app wont let you save articles unless you are registered and logged in.
+
+## Purpose
+
+This app was designed to help users locate and save recent articles on the web. Being able to revisit articles that may be relevant to a specific topic or conversation can be quite useful these days.
+
+## Technology
+
+- HTML
+- CSS
+- NODE.js
+- REACT
+
+For this app to function properly a system of form validation was used to verify users and searches.
+
+## Deployment
+
+[Click me](https://681bbd438758f9c47dbcb7ac--lustrous-marshmallow-026c2d.netlify.app/)
+[Demo Video](https://vimeo.com/1084729517/9f70a02c8b)
