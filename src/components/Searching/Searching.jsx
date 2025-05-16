@@ -9,8 +9,6 @@ function Searching({ handleSearch }) {
     return null;
   }
 
-  //set up a controled input
-
   const handleQueryChange = (e) => {
     setQuery(e.target.value);
   };
