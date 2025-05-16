@@ -33,14 +33,6 @@ function Results({
     );
   }
 
-  // if (handleLogin) {
-  //   return (
-  //     <div className="modal__content">
-  //       <SuccessModal />
-  //     </div>
-  //   );
-  // }
-
   if (results.length === 0 && !hasSearched) {
     return null;
   }

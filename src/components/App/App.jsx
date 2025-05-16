@@ -26,7 +26,6 @@ function App() {
     _id: "",
   });
 
-  //an array of all the keywords
   const savedNewsKeywords = useMemo(() => {
     return savedNews.map((savedArticle) => savedArticle.keyword);
   }, [savedNews]);
@@ -54,7 +53,6 @@ function App() {
     setKeyWord(query);
     getArticle(query)
       .then((data) => {
-        // console.log(data);
         setResults(data.articles);
       })
       .catch(console.error)
@@ -116,7 +114,6 @@ function App() {
         return handleLoginModalSubmit(email, password);
       })
       .then(() => {
-        //open the success modal
         setActiveModal("Success");
       })
       .catch((error) => {
